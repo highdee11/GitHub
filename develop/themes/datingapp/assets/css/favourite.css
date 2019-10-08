@@ -1,0 +1,155 @@
+
+/* ***********************
+favorite
+************************** */
+
+.favorite {
+  background: #EDE7E7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.favorite .head {
+    padding: 0 5px;
+}
+.favorite .head h3{
+  display: block;
+  color: #555;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.favorite .head span.green{
+  color: #76B82A;
+}
+
+.favorite .head span.pink{
+  color: #F1958E;
+}
+
+.favorite .navbar {
+  padding: 0;
+  height: auto;
+  display: inline-block;
+}
+
+
+.favorite .dropdown {
+  float: right;
+
+}
+.favorite .dropdown .btn {
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.favorite-list {
+  width: 30%;
+  float: left;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 3px;
+}
+.favoritess {
+  overflow: hidden;
+}
+.favorite-list img{
+  width: 100%;
+}
+.favorite-list .pro-name small {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #555;
+}
+
+.favorite-list .pro-name h3{
+  font-size: 14px;
+  position: relative;
+}
+.favorite-list .pro-name h3:after{
+  display: block;
+  content: '';
+  clear: both;
+  height: 5px;
+  width: 5px;
+  background: #1dbf73;
+  position: absolute;
+  top: 4px;
+  left: 62px;
+  border-radius: 50%;
+}
+.favorite-list .pro-name {
+    text-align: center;
+    margin-top: -24px;
+    padding: 5px 0;
+}
+
+.favorite .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: inherit;
+}
+
+.favor-list {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+.favor-list .sugges-img {
+  width: 80px;
+  float: left;
+  margin-right: 15px;
+
+}
+.favor-list .sugges-img img{
+  border-radius: 6px;
+}
+.favor-list .sugges-con {
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.favor-list .sugges-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  padding: 0px 5px;
+  float: right;
+}
+
+.bio-text {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.bio-text h5{
+  text-transform: capitalize;
+  line-height: 2;
+}
+.bio-text p{
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+
+.buttons {
+
+}
+.buttons a {
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  border: 1px solid #555;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+

@@ -1,0 +1,23 @@
+<!-- Add overriding styling for this element here -->
+<style>
+
+</style>
+
+<div class="form-group date-time">
+    <label for="">date of birth</label>
+    <input name="date_of_birth" value="15-05-1990" data-format="DD-MM-YYYY" data-template="D MMM YYYY"> 
+</div>
+
+<!-- ADD Additional scripts to the bottom -->
+<!-- needs /assets/js/combodate.js -->
+<script>
+    $('.date-time input').combodate({
+        minYear: 1990,
+        maxYear: 2019
+    });  
+
+    document.getElementById("uploadBtn").onchange = function () {
+    	document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+    };
+
+</script>

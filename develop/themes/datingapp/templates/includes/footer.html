@@ -1,0 +1,106 @@
+
+    <!-- footer-area -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="fo-item">
+                        <h3>Dattingapp</h3>
+                        <p>Schelphoek 2 <br>1813 SE Alkmaar<br> 072 52 75 075 <br>Postadres: Postbus 9000<br> 1800 GR Alkmaar<br> Gesloten 24/12/2018 tot 2/1/2019</p>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="fo-item">
+                        <h3>ALGEMEEN </h3>
+                        <ul>
+                            <li><a href="#">Geschiedenis</a></li>
+                            <li><a href="#">Leesherinneringen</a></li>
+                            <li><a href="#">Manuscripten</a></li>
+                            <li><a href="#">Vacatures</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="fo-item">
+                        <h3>ZAKELIJK </h3>
+                        <ul>
+                            <li><a href="#">Catalogus zomer 2019</a></li>
+                            <li><a href="#">AVI-boeken brochure</a></li>
+                            <li><a href="#">Bobbi 15 jaar catalogus </a></li>
+                            <li><a href="#">Promotiemateriaal</a></li>
+                            <li><a href="#">Scholen</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="fo-item">
+                        <h3>COPYRIGHT</h3>
+                        <ul>
+                            <li><a href="#">Privacy Statement</a></li>
+                            <li><a href="#">Foreign rights</a></li>
+                            <li><a href="#">The Order of the Dragon Riders –</a></li>
+                            <li><a href="#">Foreign Rights</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area -->
+
+
+
+
+
+    <!-- scrolltotop -->
+    <div class="col-12">
+      <a href="#" class="scrolltotop"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+    <!-- Js script links-->
+    <script src="/themes/datingapp/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/themes/datingapp/assets/js/bootstrap.min.js"></script>
+    <script src="/themes/datingapp/assets/js/lightbox.min.js"></script>
+    <script src="/themes/datingapp/assets/js/owl.carousel.min.js"></script>
+    <script src="/themes/datingapp/assets/js/mini-event-calendar.min.js"></script>
+    <script src="/themes/datingapp/assets/js/script.js"></script>
+<!--     <script src="/themes/datingapp/assets/js/ninja-slider.js"></script>
+    <script src="/themes/datingapp/assets/js/thumbnail-slider.js"></script> -->
+        <script>
+        var sameDaylastWeek = new Date().setDate(new Date().getDate() - 7);
+        var someDaynextMonth = new Date().setDate(new Date().getDate() + 31);
+
+        // All dates should be provided in timestamps
+            var sampleEvents = [
+            {
+                title: "jQueryScript.Net",
+                date: sameDaylastWeek, // Same day as today, last week
+                link: "#"
+            },
+            {
+                title: "Today Event",
+                date: new Date().getTime(), // Today
+                link: "#"
+            },
+            {
+                title: "CSSScript.Com",
+                date: someDaynextMonth, // Some day as today, next month
+                link: "#"
+            }
+            ];
+
+        $(document).ready(function(){
+            $("#calendar").MEC({
+                events: sampleEvents
+            });
+
+            // Make calendar start on monday
+            $("#calendar2").MEC({
+                from_monday: true,
+                events: sampleEvents
+            });
+        });
+    </script>
+    
+  </body>
+</html>

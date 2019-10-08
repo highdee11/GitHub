@@ -1,0 +1,493 @@
+/* ****************
+Ratina
+************** */
+
+
+@media (max-width: 1920px){
+.color-box {
+    overflow: hidden;
+    max-width: 600px;
+    padding-left: 5%;
+}
+
+}
+
+
+@media (max-width: 1600px){
+
+.color-box {
+    overflow: hidden;
+    max-width: 550px;
+    padding-left: 4%;
+}
+
+
+}
+
+@media (max-width: 1440px){
+.color-box {
+    overflow: hidden;
+    max-width: 550px;
+    padding-left: 4%;
+}
+
+}
+
+
+
+/* ****************
+Desktop
+************** */
+
+@media (max-width: 1199px){
+.headers .form-inline .form-control {
+    width: auto;
+}
+#frame .content .messages ul li.sent span.time {
+    right: 30px;
+}
+#frame .content .messages ul li.replies span.time {
+    left: 30px;
+}
+.news-feed .card .card-body {
+    padding: 10px 5px;
+}
+.news-feed .list-group-item {
+    padding: 10px 5px;
+}
+    
+.profile-slider .sugges-con .sugges-btn a {
+    text-decoration: none;
+    font-size: 22px;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+
+
+
+}
+@media (max-width: 1024px){
+
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 991px){
+.signup-form {
+    padding: 0 15px;
+}
+.signup-form form {
+    padding: 10px 30px;
+}
+
+.headers .navbar-brand img {
+    margin-bottom: 0px;
+}
+.navbar {
+    padding: 0px;
+    height: auto;
+}
+#frame .content {
+    width: 59%;
+    height: 100%;
+}
+#frame .content .messages ul li img {
+    width: 50px;
+    border-radius: 8px;
+    float: left;
+}
+#frame .content .messages ul li.sent p {
+    margin-left: 0;
+    margin-top: 10px;
+}
+#frame .content .messages ul li.sent span.time {
+    display: none
+}
+#frame .content .messages ul li.replies p {
+    margin-top: 10px;
+}
+#frame .content .messages ul li.replies span.time {
+    display: none;
+}
+
+.message-chat#frame .content {
+    width: 100%;
+    height: 100%;
+}
+
+.image-gallery .gallay {
+    width: 65px;
+    float: left;
+}
+.news-feed .card .card-body ul li a span {
+    margin-left: 10px;
+    display: inline-block;
+}
+.news-feed .list-group-item a span {
+    margin-left: 10px;
+    display: inline-block;
+}
+.favorite-list {
+    width: 45%;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 3px;
+}
+.favor-list .sugges-img {
+    width: 60px;
+    float: left;
+    margin-right: 0px;
+}
+
+.favorite .dropdown {
+    float: inherit;
+}
+.favorite-list .pro-name h3:after {
+    left: 54px;
+    border-radius: 50%;
+}
+.pop-setting {
+    top: 10px;
+}
+
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+
+}
+
+/* **************** 
+Tab 
+************** */
+
+@media (max-width: 767px){
+    #frame #sidepanel {
+    width: 58px;
+    min-width: 58px;
+}
+#frame #sidepanel #profile {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    background: #fff;
+}
+
+#frame .content {
+    width: 88%;
+    height: 100%;
+}
+#frame #sidepanel #contacts .setting {
+    display: none;
+}
+#frame #sidepanel #search {
+    display: none;
+}
+#frame #sidepanel #contacts .wrap .meta {
+    display: none;
+}
+#frame #sidepanel #profile .nav-link {
+    display: block;
+    padding: 4px;
+}
+#frame #sidepanel #contacts ul li.contact {
+    padding: 2px 0;
+}
+#frame .content .messages ul li p {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 280px;
+    line-height: 130%;
+}
+.fo-item h3 {
+    font-size: 20px;
+}
+
+.fo-item h3.faka {
+    margin-top: 26px;
+}
+.suggestions .sugges-img {
+    width: 120px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+.message-chat#frame #sidepanel #profile .wrap p {
+    display: block;
+}
+.message-chat#frame #sidepanel #contacts ul li.contact .wrap .meta {
+    display:  inline-grid;
+}
+.message-chat#frame #sidepanel #contacts .setting {
+    display: block;
+    margin-right: 15px;
+}
+.chatbox {
+    position: fixed !important;
+    right: 15px;
+}
+.chattasding.navbar {
+    text-align: center;
+    padding: 15px;
+    margin: 0px 0;
+    display: block;
+    height: 0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.chattasding ul li a{
+
+  padding: 2px 15px;
+}
+.message-chat#frame .content {
+    width: calc(100% - 58px);
+    min-width: 100% !important;
+}
+.message-chat#frame .content .message-input .wrap input {
+    width: 91%;
+    padding: 10px;
+}
+.news-feed .card .card-body {
+    padding: 10px 10px;
+}
+.news-feed .list-group-item {
+    padding: 10px 10px;
+}
+.news-feed .card {
+    margin-bottom: 30px;
+}
+
+.news-feed .card.gedf-card {
+    margin-bottom: 15px;
+}
+.profile-cover .profile {
+    margin-left: 15px;
+}
+.favorite-list {
+    width: 30%;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 3px;
+}
+.favorite-list .pro-name h3:after {
+    left: 100px;
+    border-radius: 50%;
+}
+
+.popup-area .popup {
+    width: 450px;
+}
+.popup-area .sub-popup {
+    width: 450px;
+}
+.sub-popup ul li img {
+    width: 98px;
+    border-radius: 10px;
+}
+.popup-area .sub-popup:before{
+    top: 0;
+}
+.popup-area .sub-popup:after{
+    top: 0;
+}
+
+
+}
+
+
+@media (max-width: 575px) {
+.signup-form form {
+    padding: 10px 15px;
+}
+.signup-form p.onno {
+    margin-top: 10px;
+}
+.signup-form .inline-form .form-group {
+    margin-bottom: 0;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 24px;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #555;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+#frame .content .messages ul li img {
+    width: 40px;
+    border-radius: 8px;
+    float: left;
+}
+#frame .content .messages ul li img {
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+}
+.fo-item {
+    margin-bottom: 30px;
+}
+#frame .content .message-input .wrap span.icons {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.news-feed .switch {
+    margin-top: 30px;
+}
+
+.favorite-list .pro-name h3:after {
+    left: 80px;
+    border-radius: 50%;
+}
+
+.popup-area .popup {
+    width: 350px;
+}
+.popup-area .sub-popup {
+    width: 350px;
+}
+.sub-popup ul li img {
+    width: 70px;
+    border-radius: 10px;
+}
+.popup-area .sub-popup:before {
+    top: 0;
+    font-size: 45px;
+}
+.popup-area .sub-popup:after {
+    top: 0;
+    font-size: 45px;
+}
+
+}
+
+
+
+@media (max-width: 510px) {
+#frame .content {
+    width: 87%;
+    height: 100%;
+}
+
+
+}
+
+@media (max-width: 480px) {
+#frame .content {
+    width: 85%;
+    height: 100%;
+}
+#frame #sidepanel {
+    width: 45px;
+    min-width: 45px;
+}
+
+}
+
+@media (max-width: 425px) {
+
+.suggestions .sugges-img {
+    height: 170px;
+}
+.popup-area .popup {
+    width: 300px;
+}
+.popup-area .sub-popup {
+    width: 300px;
+}
+.sub-popup ul li img {
+    width: 65px;
+    border-radius: 10px;
+}
+.sub-popup ul li {
+    padding-right: 6px;
+}
+
+}
+
+
+
+/* **************** 
+Mobile 
+************** */
+@media (max-width: 375px) {
+#frame .content .message-input .wrap span.icons {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+#frame .content .message-input .wrap input {
+     margin: 8px;
+}
+#frame .content {
+    width: 83%;
+    height: 100%;
+}
+.sub-popup ul li img {
+    width: 66px;
+    border-radius: 10px;
+}
+
+}
+
+@media (max-width: 410px) {
+#frame .content {
+    width: 82%;
+    height: 100%;
+}
+
+
+
+}
+
+@media (max-width: 320px) {
+.headers .form-inline span.search {
+    position: absolute;
+    left: 8px;
+    top: 4px;
+}.headers .form-inline .event {
+    margin-top: 5px;
+}
+
+.suggestions .sugges-img {
+    height: 170px;
+    width: 110px;
+}
+.popup-area .popup {
+    width: 280px;
+}
+
+.popup-area .sub-popup {
+    width: 310px;
+}
+.sub-popup ul li img {
+    width: 65px;
+    border-radius: 10px;
+}
+
+
+}

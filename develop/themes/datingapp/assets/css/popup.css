@@ -1,0 +1,111 @@
+
+/* ***********************
+popup-area
+************************* */
+.popup-area {
+  overflow: hidden;
+  padding: 30px 0;
+  background-image: linear-gradient(to right, #FECC18 , #B97811);
+}
+.popup2{
+  background-image: linear-gradient(#0A0201, #67150C);
+}
+
+.popup-area .popup {
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.popup-area .popup:before{
+  font-family: "FontAwesome";
+  display: inline-block;
+  content: '\f104';
+  clear: both;
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  left: -30px;
+}
+.popup-area .popup:after{
+  font-family: "FontAwesome";
+  display: inline-block;
+  content: '\f105';
+  clear: both;
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  right: -30px;
+}
+
+.popup-area .close-icon {
+  float: right;
+  font-size: 60px;
+  color: #fff;
+}
+.pop-setting {
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+
+.pop-setting li i{
+  color: #fff;
+  font-size: 20px;
+
+}
+
+
+.sub-popup {
+  width: 600px;
+  margin: 50px auto;
+  position: relative;
+
+}
+.sub-popup ul{
+  margin: 0;
+  padding: 0;
+}
+
+.sub-popup ul li{
+  list-style: none;
+  display: inline; 
+  padding-right: 15px;
+}
+
+.sub-popup ul li a{
+  display: inline-block;
+ 
+}
+.sub-popup ul li:last-child {
+  padding-right: 0px;
+}
+
+.sub-popup ul li img{
+  width: 135px;
+  border-radius: 10px;
+}
+.popup-area .sub-popup:before{
+  font-family: "FontAwesome";
+  display: inline-block;
+  content: '\f104';
+  clear: both;
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 20%;
+  left: -30px;
+}
+.popup-area .sub-popup:after{
+  font-family: "FontAwesome";
+  display: inline-block;
+  content: '\f105';
+  clear: both;
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  top: 20%;
+  right: -30px;
+}

@@ -1,0 +1,551 @@
+    
+	
+	<style type="text/css">
+	
+		/* **********************
+message-chat
+************************ */
+.chat-head {
+
+}
+.message-chat {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 222;
+}
+.message-chat#frame {
+      width: auto;
+    height: auto;
+    min-height: auto;
+    max-height: 200px;
+    background: #000;
+}
+
+.message-chat#frame  #sidepanel {
+  float: left;
+  min-width: 280px;
+  max-width: 340px;
+  width: 40%;
+  height: 100%;
+  background: #FFFFFF;
+  color: #555;
+  overflow: hidden;
+  position: relative;
+  border-right: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 400px;
+}
+.message-chat#frame #sidepanel #profile {
+    width: 100%;
+    margin: 0;
+}
+
+.chattasding {
+  text-align: center;
+  background: #FEC700;
+}
+.chattasding ul{
+  margin: 0;
+  padding: 0;
+  margin-top: -15px;
+}
+.chattasding ul li{
+  list-style: none;
+  display: inline;
+}
+
+.chattasding ul li a{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #555;
+  padding: 2px 35px;
+}
+.chattasding.navbar {
+  text-align: center;
+  padding: 0;
+  margin: 0px 0;
+  display: block;
+  height: 20px;
+  margin-bottom: 15px;
+}
+.chattasding.navbar .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: inherit;
+    right: 0;
+}
+
+.message-chat#frame .content .messages ul li img {
+    width: 30px;
+    border-radius: 50%;
+}
+.message-chat#frame .content .messages ul li.sent p {
+    background: #fff;
+    color: #555;
+    margin-left: 20px;
+    display: inherit;
+    font-size: 13px;
+}
+
+.message-chat#frame .content .messages ul li.replies p {
+    background: #FEE380;
+    float: right;
+    color: #555;
+    font-size: 13px;
+}
+.message-chat#frame .content .messages ul li {
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin: 0;
+    width: calc(100% - 25px);
+    font-size: 12px;
+    position: relative;
+}
+.message-chat#frame .content .messages ul li span{
+  display: block;
+  margin: 2px 0;
+}
+.message-chat#frame .content .messages ul li.sent small{
+  float: right;
+}
+
+.message-chat#frame .content .messages ul li.replies small{
+  float: right;
+}
+.message-chat#frame .content .messages ul li.replies img {
+  display: none;
+}
+
+.message-chat#frame .content .messages ul li.replies{
+  margin: 8px 0;
+}
+
+.message-chat#frame .content .message-input .wrap span.icons {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.chatbox {
+    position: fixed !important;
+    bottom: 0;
+    right: 115px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+
+    -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.chatbox--tray {
+    bottom: -355px;
+}
+
+.chatbox--closed {
+    bottom: -400px;
+}
+
+.chatbox .form-control:focus {
+    border-color: #1f2836;
+}
+
+.chatbox__title,
+.chatbox__body {
+    border-bottom: none;
+}
+
+.chatbox__title {
+    min-height: 50px;
+    padding-right: 10px;
+    background-color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    color: #555;
+
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.chatbox__title h5 {
+    height: 50px;
+    margin: 0;
+    line-height: 50px;
+    position: relative;
+    padding-left: 20px;
+
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+.chatbox__title h5 a {
+    color: #555;
+    max-width: 195px;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+}
+.chatbox__title h5 a i{
+  color: #FEC700;
+  margin-right: 15px;
+}
+
+.chatbox__title h5:before {
+ display: none;
+}
+
+.chatbox__title__tray,
+.chatbox__title__close {
+    width: 24px;
+    height: 24px;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    opacity: 0.5;
+    cursor: pointer;
+
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+}
+
+.chatbox__title__tray:hover,
+.chatbox__title__close:hover {
+    opacity: 1;
+}
+
+.chatbox__title__tray span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-bottom: 2px solid #fff
+}
+
+.chatbox__title__close svg {
+    vertical-align: middle;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.2px;
+}
+
+.chatbox__body,
+.chatbox__credentials {
+    padding: 15px;
+    border-top: 0;
+    background-color: #f5f5f5;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+.chatbox__credentials {
+    display: none;
+}
+
+.chatbox__credentials .form-control {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.chatbox__body {
+    overflow-y: auto;
+}
+
+.chatbox__body__message {
+    position: relative;
+}
+
+.chatbox__body__message p {
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px rgba(100, 100, 100, 0.1);
+    box-shadow: 1px 1px rgba(100, 100, 100, 0.1);
+}
+
+.chatbox__body__message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 2px solid #fcfcfc;
+    position: absolute;
+    top: 15px;
+}
+
+.chatbox__body__message--left p {
+    margin-left: 15px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.chatbox__body__message--left img {
+    left: -5px;
+}
+
+.chatbox__body__message--right p {
+    margin-right: 15px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.chatbox__body__message--right img {
+    right: -5px;
+}
+
+.chatbox__message {
+    padding: 15px;
+    min-height: 50px;
+    outline: 0;
+    resize: none;
+    border: none;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background-color: #fefefe;
+}
+
+.chatbox--empty {
+
+}
+
+.chatbox--empty.chatbox--tray {
+    
+}
+
+.chatbox--empty.chatbox--closed {
+   
+}
+
+.chatbox--empty .chatbox__body,
+.chatbox--empty .chatbox__message {
+    display: none;
+}
+
+.chatbox--empty .chatbox__credentials {
+    display: block;
+}
+
+
+
+	
+	</style>
+	
+	
+	<!-- messager-chat -->
+
+    <div class="message-chat" id="frame">
+      <div class="chatbox chatbox--tray" id="sidepanel">
+        <div class="chatbox__title">
+            <h5><a href="#"><i class="fa fa-comment" aria-hidden="true"></i> chats</a></h5>
+        </div>
+
+        <div class="chatbox__body" id="profile">
+            <div class="chattasding navbar">
+              <ul>
+                <li><a href="#">chat</a></li> 
+                <li class="dropdown">
+                <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              </ul>
+            </div>
+          
+          <div id="search">
+              <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+              <input type="text" />
+          </div>
+
+          <div id="contacts">
+              <ul>
+                  <li class="contact">
+                      <div class="wrap">
+                          <img src="/themes/datingapp/assets/img/asd.png" alt="" />
+                          <div class="meta">
+                              <p class="name">Louis Litt</p>
+                              <p class="preview">You just got LITT up, Mike.</p>
+                          </div>
+                      </div>
+                      <div class="setting">
+                      <div class="navbar frits">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> now <i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      </div>
+                  </li>
+                  <li class="contact">
+                      <div class="wrap">
+                         <img src="/themes/datingapp/assets/img/asd.png" alt="" />
+                          <div class="meta">
+                              <p class="name">Louis Litt</p>
+                              <p class="preview">You just got LITT up, Mike.</p>
+                          </div>
+                      </div>
+                      <div class="setting">
+                      <div class="navbar frits">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 5 min ago <i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      </div>
+                  </li>
+                  <li class="contact">
+                      <div class="wrap">
+                         <img src="/themes/datingapp/assets/img/asd.png" alt="" />
+                          <div class="meta">
+                              <p class="name">Louis Litt</p>
+                              <p class="preview">You just got LITT up, Mike.</p>
+                          </div>
+                      </div>
+                      <div class="setting">
+                      <div class="navbar frits">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 5 min ago <i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      </div>
+                  </li>
+                  <li class="contact">
+                      <div class="wrap">
+                         <img src="/themes/datingapp/assets/img/asd.png" alt="" />
+                          <div class="meta">
+                              <p class="name">Louis Litt</p>
+                              <p class="preview">You just got LITT up, Mike.</p>
+                          </div>
+                      </div>
+                      <div class="setting">
+                      <div class="navbar frits">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 5 min ago <i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      </div>
+                  </li>
+                  <li class="contact">
+                      <div class="wrap">
+                          <img src="/themes/datingapp/assets/img/asd.png" alt="" />
+                          <div class="meta">
+                              <p class="name">Louis Litt</p>
+                              <p class="preview">You just got LITT up, Mike.</p>
+                          </div>
+                      </div>
+                      <div class="setting">
+                      <div class="navbar frits">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 5 min ago <i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      </div>
+                  </li>
+                  <li class="contact">
+                      <div class="wrap">
+                         <img src="/themes/datingapp/assets/img/asd.png" alt="" />
+                          <div class="meta">
+                              <p class="name">Louis Litt</p>
+                              <p class="preview">You just got LITT up, Mike.</p>
+                          </div>
+                      </div>
+                      <div class="setting">
+                      <div class="navbar frits">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 5 min ago <i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      </div>
+                  </li>
+                  <li class="contact">
+                      <div class="wrap">
+                         <img src="/themes/datingapp/assets/img/asd.png" alt="" />
+                          <div class="meta">
+                              <p class="name">Louis Litt</p>
+                              <p class="preview">You just got LITT up, Mike.</p>
+                          </div>
+                      </div>
+                      <div class="setting">
+                      <div class="navbar frits">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 5 min ago <i class="fa fa-cog" aria-hidden="true"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                      </div>
+                  </li>
+
+
+
+              </ul>
+          </div>
+        </div>
+    </div>
+
+
+      <div class="chat-footer">
+        
+      </div>
+    </div>
+
+    <!-- messager-chat -->

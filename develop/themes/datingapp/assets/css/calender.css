@@ -1,0 +1,20 @@
+.modal-content {
+    width: 100%;
+    pointer-events: auto;
+    background-color: #22252E;
+    background-clip: padding-box;
+    border: 1px solid #22252E;
+    border-radius: .3rem;
+    outline: 0;
+}
+.modal-content .close {
+  color: #fff;
+}
+
+.modal-header {
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: none;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
